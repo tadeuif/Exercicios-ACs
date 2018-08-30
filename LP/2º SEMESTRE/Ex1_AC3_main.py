@@ -1,4 +1,4 @@
-from Ex1 AC3 televisao import Televisao
+from Ex1_AC3_televisao import Televisao
 tv = Televisao()
 print(tv.ligada)
 print(tv.canal)
