@@ -10,3 +10,11 @@ print(tv.ligada)
 print(tv.canal)
 print(tv_sala.ligada)
 print(tv_sala.canal)
+
+tv.aumenta_canal()
+tv_sala.diminui_canal()
+
+
+print(tv.canal)
+
+print(tv_sala.canal)
