@@ -55,6 +55,7 @@ class Aluno:
 aluno = Aluno()
 #b)
 aluno.nome = "Juca Bala"
+print(aluno.nome)
 #c)
 print(aluno.aprovado())
 #d)
