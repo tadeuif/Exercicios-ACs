@@ -1,0 +1,54 @@
+table{
+    margin: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Karla', sans-serif;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    margin-left: 165px;   
+}
+
+h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+table th.cab{
+    background-color: azure;
+    text-align: center;
+}
+
+table th.dif{
+	border-top: hidden;
+    border-left: hidden;
+    background-color:white;
+}
+
+table th.media{
+    background-color: rgb(25, 133, 3);
+}
+
+table th.prova{
+    background-color: rgb(255, 217, 1);
+}
+
+table th.sub{
+    background-color: rgb(247, 181, 1);
+}
+
+table th.mfinal{
+    background-color: rgb(4, 255, 255);
+}
+
+
+
+
