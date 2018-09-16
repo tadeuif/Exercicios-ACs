@@ -1,0 +1,73 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AC3 TECWEB</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="estilo_ac3.css" />
+    </head>
+    <body>
+        <!--AC3 EX1-->
+        <h1>FORM. 1</h1>
+        <form action="" method="POST">
+            <label for="nomecompleto">Nome completo: </label><br>
+                <input type="text" name="nomecompleto" maxlength="100" required><br>
+            <label for="emailremetente">E-mail do remetente: </label><br>
+                <input type="text" name="emailremetente" maxlength="100" required><br>
+            <label for="assuntomsg">Assunto: </label><br>
+                <select name="assuntomsg" required>
+                    <option value="bugs">Bugs</option>
+                    <option value="reclamacao">Reclamações</option>
+                    <option value="sugestao">Sugestões</option>        
+                </select><br>
+            <label for="msg">Mensagem: </label><br>
+                <textarea required>Digite sua mensagem</textarea><br>
+            <label for="palavraschave">Palavras chave: </label><br>
+                <select name="palavraschave" multiple>
+                    <option value="problemas">Problemas</option>
+                    <option value="tecnologia">Técnologia</option>
+                    <option value="impacta">Impacta</option>
+                    <option value="email">E-mail</option>        
+                </select><br>
+        </form>
+        <!--AC3 EX2-->
+        <h1>FORM. 2</h1>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Obrigatórios</legend>
+                <label for="nomecompletoaluno">Nome completo: </label><br>
+                    <input type="text" name="nomecompletoaluno" maxlength="100" required><br>
+                <label for="idadealuno">Idade: </label><br>
+                    <input type="number" name="idadealuno" required><br>
+                <label for="sexo">Sexo: </label><br>
+                    <select name="sexo" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select><br>
+                <label for="curso">Curso: </label><br>
+                <select name="curso" required>
+                    <option value="ads">ADS</option>
+                    <option value="gti">GTI</option>
+                    <option value="bd">BD</option>
+                </select><br>
+                <label for="emailaluno">E-mail: </label><br>
+                    <input type="text" name="emailaluno" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opcionais</legend>
+                <label for="telefone">Telefone: </label><br>
+                    (DDD-TEL):<input type="tel" name="telefone" pattern="[0-9]{2} - [0-9]{9}" maxlength="11"><br>
+                <label for="corcracha">Selecione a cor do crachá: </label>
+                <select name="corcracha">
+                        <option id="vermelho" value="#FF0000">Vermelho</option>
+                        <option id="azul" value="#0000FF">Azul</option>
+                        <option id="amarelo" value="#FFFF00">Amarelo</option>
+                </select><br>
+                <label for="linkgit">Link GitHUB: </label><br>
+                    <input type="text" name="linkgit"><br>
+                <label for="dataingresso">Data de ingresso no curso: </label>
+                    <input type="date" name="dataingresso"><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
