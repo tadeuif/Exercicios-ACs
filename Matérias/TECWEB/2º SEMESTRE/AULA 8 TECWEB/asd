@@ -1,0 +1,40 @@
+<option label="Norte">
+    <option>1 - Amazonas (AM)- Manaus</option>
+    <option>2 - Roraima (RR)- Boa Vista</option>
+    <option>3 - Amapá (AP)- Macapá</option>
+    <option>4 - Pará (PA)- Belém</option>
+    <option>5 - Tocantins (TO)- Palmas</option>
+    <option>6 - Rondônia (RO)- Porto Velho</option>
+    <option>7 - Acre (AC)- Rio Branco</option>
+</optgroup>
+
+<optgroup label="Nordeste">
+    <option>8 - Maranhão (MA)- São Luís</option>
+    <option>9 - Piauí (PI)- Teresina</option>
+    <option>10 - Ceará (CE)- Fortaleza</option>
+    <option>11 - Rio Grande do Norte (RN)- Natal</option>
+    <option>12 - Pernambuco (PE)- Recife</option>
+    <option>13 - Paraíba (PB)- João Pessoa</option>
+    <option>14 - Sergipe (SE)- Aracaju</option>
+    <option>15 - Alagoas (AL)- Maceió</option>
+    <option>16 - Bahia (BA)- Salvador</option>
+</optgroup>
+
+<optgroup label="Centro-Oeste">
+    <option>17 - Mato Grosso (MT)- Cuiabá</option>
+    <option>18 - Mato Grosso do Sul (MS)- Campo Grande</option>
+    <option>19 - Goiás (GO)- Goiânia</option>
+</optgroup>
+
+<optgroup label="Região Sudeste">
+    <option>20 - São Paulo (SP)- São Paulo</option>
+    <option>21 - Rio de Janeiro (RJ)- Rio de Janeiro</option>
+    <option>22 - Espírito Santo (ES)- Vitória</option>
+    <option>23 - Minas Gerais (MG)- Belo Horizonte</option>
+</optgroup>
+
+<optgroup label="Região Sul">
+    <option>24 - Paraná (PR)- Curitiba</option>
+    <option>25 - Rio Grande do Sul (RS)- Porto Alegre</option>
+    <option>26 - Santa Catarina (SC)- Florianópolis</option>
+</optgroup>

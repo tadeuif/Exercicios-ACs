@@ -1,0 +1,101 @@
+body{
+	font-family: 'Calibri', serif;
+	width: 500px;
+	margin: 50px;
+}
+
+table{
+	border: 50px;
+	border-collapse: 50px;
+}
+
+th, td{
+	border: 50px;
+	padding: 50px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.aprendido{
+	background-color: lightgreen;
+}
+
+caption{
+	font-weight: bold;
+}
+
+a{
+	text-decoration-line: none;
+}
+
+a:hover{
+	text-decoration-line: underline;
+}
+
+th{
+	background-color: #9cfcfc;
+}
+
+.apaga-borda-superior{
+	border-top-style: hidden!important;
+}
+
+form h2{
+	text-align: center;
+}
+
+form{
+	width: 450px;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+
+input{
+	font: 1em sans-serif;
+	box-sizing: border-box;
+}
+
+input[type=checkbox], input[type=radio]{
+	width: auto;
+	border: none;
+}
+
+input:focus, textarea:focus{
+	border-color: #000;
+}
+
+fieldset{
+	width: 300px;
+	box-sizing: border-box;
+	margin-left: 136px;
+	border: 1px solid #999;
+}
+
+button{
+	margin: 20px 0 0 124px;
+}
+
+label{
+	position: relative;
+}
+
+.green{
+	color: #3cba54;
+}
+
+.yellow{
+	color: #f4c20d;
+}
+
+.red{
+	color: #db3236;
+}
+
+.blue{
+	color: #4885ed;
+}

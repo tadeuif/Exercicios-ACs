@@ -1,0 +1,88 @@
+
+.color1{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+#p2{
+	color: red;
+	background-color: black;
+}
+
+.teste{
+	background-color: lightskyblue;
+	text-align: center;
+	font-size: 30px;
+	/*text-indent: 30px;*/
+}
+
+p.teste{
+	background-color: palevioletred;
+	color: antiquewhite;
+	text-align: justify;
+	text-decoration: overline;
+}
+
+body{
+	font-family: 'Cinzel', serif;
+	background-image: url('https://i2.wp.com/soyhomosensual.com/wp-content/uploads/2016/12/1530613_1015577691796363_1675630096_n.jpg?fit=640%2C640&ssl=1');
+	background-repeat: no-repeat;
+	/*background-position: unset;*/
+	background-size: cover;
+	letter-spacing: 2px;
+	line-height: 25px;
+	word-spacing: 30px;
+}
+
+h1:hover{
+	background-color: blueviolet;
+	color: yellow;
+}
+
+a:hover{
+	background-color: yellow;
+}
+
+a:visited{
+	background-color: red;
+	color: brown;
+}
+
+a:focus{
+	background-color: green;
+}
+
+a:active{
+	background-color: blue;
+	color: #FFFFFF;
+}
+
+table, th, td{
+	color: aliceblue;
+	border: 3px solid gray;
+	border-collapse: collapse;
+}
+
+.bordas{
+	border-top-width: 2px;
+	border-top-color: blue;
+	border-top-style: dashed;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	border-right-width: 2px;
+	border-right-color: orange;
+	border-right-style: solid;
+
+	border-bottom-width: 2px;
+	border-bottom-color: yellow;
+	border-bottom-style: double;
+
+	border-left-width: 2px;
+	border-left-color: red;
+	border-left-style: dotted;
+}

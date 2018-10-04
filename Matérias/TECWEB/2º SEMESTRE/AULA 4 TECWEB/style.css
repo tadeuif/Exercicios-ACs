@@ -1,0 +1,37 @@
+table, tr{
+    border: 2px solid gray;
+    border-color: black;
+    border-collapse:collapse;
+    vertical-align: top;
+    text-align: center;
+
+}
+
+th{
+    background-color: red;
+}
+
+#div1{
+    background-color: rgb(161, 127, 255);
+}
+
+div{
+    background-color: rgb(184, 11, 34);
+}
+#azul{
+    color: #4285f4;
+    font-family: 'Noto Sans', serif;
+    border: #4285f4;
+}
+#verde{
+    color: #34a852;
+    font-family: 'Noto Sans', serif;
+}
+#amarelo{
+    color: #FBBC05;
+    font-family: 'Noto Sans', serif;
+}
+#vermelho{
+    color: #EA4335;
+    font-family: 'Noto Sans', serif;
+}

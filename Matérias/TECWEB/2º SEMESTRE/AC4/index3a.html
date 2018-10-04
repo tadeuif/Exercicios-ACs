@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AC4 TECWEB</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="estilos/form.css" />
+    </head>
+    <body>
+        <form action="" method="POST">
+                <h2 id="h2">Vaga de estágio em <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                </h2>
+            <fieldset>
+        
+                <legend>Graduação corrente</legend>
+                
+                    <input type="radio" value="si" name="curso"/> Sistemas de Informação<br>
+                    <input type="radio" value="cc" name="curso"/> Ciência de Computação<br>
+                    <input type="radio" value="ec" name="curso"/> Engenharia de Computação<br> 
+                
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Qual a sua linguagem favorita?</legend>
+                
+                    <label for="liguagens"></label>
+                        <select name="linguagens-front" required>
+                            <optgroup label="Front-End">
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JS" selected>JS</option>
+                            </optgroup>
+                            
+                            <optgroup label="Back-End">
+                                    <option value="php">PHP</option>
+                                    <option value="python">Python</option>
+                                    <option value="java">Java</option>
+                                    <option value="ruby">Ruby</option>
+                            </optgroup>
+                        </select><br>
+                    <label for="outraling">Outra não listada: </label><br>
+                    <input type="text" name="outraling" maxlength="50"><br>
+                
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Além do Português, possui nível avançado em algum outro idioma?</legend>
+                    
+                Inglês<input type="checkbox" value="ingles" name="ing"/><br>
+                Espanhol<input type="checkbox" value="espanhol" name="esp"/><br>
+                Francês<input type="checkbox" value="frances" name="franc"/><br> 
+
+                    <label for="outraling">Outros idiomas: </label><br>
+                    <input type="text" name="outrosidiomas" maxlength="50"><br>
+                    
+            </fieldset><br>
+            <button type="submit">Prosseguir, só mais uma página ;-)</button>
+            <br>
+            <br>
+            <progress value="33" max="100"></progress> :-|
+        </form>
+    </body>
+</html>

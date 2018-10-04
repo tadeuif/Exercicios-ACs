@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+div.div1{
+    background: yellow;
+    display: block;
+}
+
+div.div2{
+    background: red;
+    display: inline;
+}
+
+div.div3{
+    background: green;
+    display: inline-block;
+}
+
+div.div4{
+    background: black;
+    display: none;
+}
