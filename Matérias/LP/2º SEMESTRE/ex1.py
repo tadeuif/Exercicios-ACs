@@ -24,10 +24,12 @@ class Pessoa:
 
 #nome, email, celular, sigla, disciplinas
 class Aluno(Pessoa):
-    def __init__(self, n, e, c, s, m):
+    def __init__(self, n, e, c, s, m, d):
         super().__init__(n, e, c)
+        self.disciplinas = []
+        self.disciplinas.append(d)
         self.sigla = s
-        #self.disc = d
+        self.disc = self.disciplinas
         self.mensalidade = m
 
     def __repr__(self):
@@ -38,6 +40,9 @@ class Aluno(Pessoa):
 
     def get_mensalidade(self):
         return 'R$ %.2f' % self.mensalidade
+    
+    def get_disciplina(self):
+        return self.disc
 
     def set_sigla(self, sigla):
         self.sigla = sigla
@@ -45,10 +50,14 @@ class Aluno(Pessoa):
     def set_mensalidade(self, mensalidade):
         self.mensalidade = mensalidade
 
+    def set_disciplina(self, d):
+        self.disciplinas.append(d)
+        self.disc = self.disciplinas
+
     
-a = Aluno('Jô','jo@gmail.', 190, 'ADS', 630)
-a2 = Aluno('Zé','ze@gmail.', 190, 'ADS', 630)
-a3 = Aluno('Du','du@gmail.', 190, 'ADS', 630)
+a = Aluno('Jô','jo@gmail.', 190, 'ADS', 630,'IOT')
+a2 = Aluno('Zé','ze@gmail.', 190, 'ADS', 630,'IOT')
+a3 = Aluno('Du','du@gmail.', 190, 'ADS', 630,'IOT')
 
 #nome, email, celular, sigla, disciplinas
 class Professor(Pessoa):
@@ -71,4 +80,8 @@ class Professor(Pessoa):
 
 p = Professor('Lucio', 'lucio@gmail', 192, 100)
 
-print(p.get_nome())
+print(a.get_disciplina())
+print(a.set_disciplina('LP2'))
+print(a.get_disciplina())
+print(a.set_disciplina('BD'))
+print(a.get_disciplina())
