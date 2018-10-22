@@ -6,13 +6,15 @@ def index(request):
 	context = {
 		'title': 'E-Commerce FIT',
 		'paragrafo1': 'Primeiro parágrafo',
-		'paragrafo2': 'Segundo parágrafo'
+		'paragrafo2': 'Segundo parágrafo',
+		'alunos': ['Abelardo,', 'Lucas,', 'Kenny,', 'Ruan,', 'Erick,', 'Pedro'],
+		'alunos2': [],
+		'condicao1': True,
+		'condicao2': False,
+		'lista': [1, 2, 3, 4, 5]
 	}
 	return render(request, "index.html", context)
 
 def login(request):
-	if request.method == "GET":
-		print("Acesso via GET")
-	else:
-		print("Acesso via POST")
 	return render(request, "login.html")
+
