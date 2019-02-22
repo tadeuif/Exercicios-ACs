@@ -21,14 +21,9 @@ class Domino:
     def connecta(self, p):
         return p.lado_a() == self.b
 
-    #def verifica_sequencia(self, p):
-        #i = 0
-        #self.p = p
-        #p = []
-        #for i in p:
-            #p.append(pecas)
-            #i += 1
-        #return p
+#NOVAS FUNÇÕES
+'''AC1'''
+
 def ler_arquivo_todo(arq):
 
     pecas = []
@@ -36,9 +31,6 @@ def ler_arquivo_todo(arq):
     for i in range(linhas):
         pecas.append(ler_arquivo(arq, i))
     return pecas
-
-
-    
 
 def verifica_sequencia(seq):
     it = 0
@@ -59,10 +51,10 @@ def verifica_sequencia(seq):
             return False
     return True
 
-'''AC1'''
+
 pecas = ler_arquivo_todo('domino.dat')
 print(pecas)
-
+print(verifica_sequencia(pecas))
 
 #peca1 = Domino(pecas[0][0],pecas[0][1])
 #peca2 = Domino(pecas[1][0],pecas[1][1])
@@ -72,7 +64,7 @@ print(pecas)
 #print(peca2.lado_b())
 #print(peca1.connecta(peca2))
 
-print(verifica_sequencia(pecas))
+
 
 
 
