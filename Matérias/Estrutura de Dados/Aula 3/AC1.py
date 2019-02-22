@@ -38,28 +38,41 @@ def ler_arquivo_todo(arq):
     return pecas
 
 
+    
 
-
-        
+def verifica_sequencia(seq):
+    it = 0
+    it2 = 1
+    indtup = 0
+    il = 0
+    il2 = 1
+    lenght = len(seq) - 1
+    for i in range(lenght):
+        peca1 = Domino(seq[il][it],seq[il][it2])
+        peca2 = Domino(seq[il2][it],seq[il2][it2])
+        if peca1.connecta(peca2):
+            seq[indtup]
+            indtup += 1
+            il += 1
+            il2 += 1
+        else:
+            return False
+    return True
 
 '''AC1'''
+pecas = ler_arquivo_todo('domino.dat')
+print(pecas)
 
-#pecas = ler_arquivo('domino.dat', 0)
 
-#print(len_arquivo('domino.dat')
-print(ler_arquivo_todo('domino.dat'))
-
-print(ler_arquivo('domino.dat', 0))
-
-#peca1 = Domino(3,4)
-#peca2 = Domino(5,4)
-#peca3 = Domino(6,4)
-#print(peca3.verifica())
-#print(peca3.lado_a())
-#print(peca3.lado_b())
+#peca1 = Domino(pecas[0][0],pecas[0][1])
+#peca2 = Domino(pecas[1][0],pecas[1][1])
+#print(peca1.lado_a())
+#print(peca1.lado_b())
+#print(peca2.lado_a())
+#print(peca2.lado_b())
 #print(peca1.connecta(peca2))
-#print(peca2.connecta(peca1))
 
-    
+print(verifica_sequencia(pecas))
+
 
 
