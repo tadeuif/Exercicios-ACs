@@ -102,13 +102,7 @@ print(pecas)
 print(verifica_sequencia(pecas))
 print(verifica_circular(pecas))
 print(verifica_repetidas(pecas))
-#peca1 = Domino(pecas[0][0],pecas[0][1])
-#peca2 = Domino(pecas[1][0],pecas[1][1])
-#print(peca1.lado_a())
-#print(peca1.lado_b())
-#print(peca2.lado_a())
-#print(peca2.lado_b())
-#print(peca1.connecta(peca2))
+
 
 
 
