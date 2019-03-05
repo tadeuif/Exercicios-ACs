@@ -1,4 +1,4 @@
-#from estruturado.MeusModulos.Clientes import *
+
 from estruturado.MeusModulos import Clientes
 import copy
 #adicione um import para acessar o módulo ContaCorrente
