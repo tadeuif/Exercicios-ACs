@@ -37,7 +37,7 @@ def transferencia(lista_clientes,id_cliente_doador,id_cliente_receptor,valor,lim
 
     limite_ce = cliente_doador['saldo'] + limite_credito
 
-    if valor > limite_ce + 1 or valor > limite_transferencia:
+    if valor > limite_ce or valor > limite_transferencia:
         
         raise LimiteTransferenciaExcedidoException
 
