@@ -1,17 +1,5 @@
-pilha = []
-
-def push(p, elemento, tipo=str):
-    if type(elemento) == tipo:
-        p.append(elemento)
-
-def pop(p):
-    return p.pop() if len(p) > 0 else None
-
-def lenght(p):
-    return len(p)
-
-#s = '(1 + 2)*5', '3*((1*2)+3)'
-#lista = list(s)
+'Tadeu Inocencio Freitas - ADS 3A'
+'RA - 1800250'
 
 def palindromo(string):
 
@@ -23,8 +11,6 @@ def palindromo(string):
         return True
     else:
         return False       
-
-#print(palindromo('arara'))
 
 def balanceada(string):
     lista = list(string)
@@ -46,4 +32,3 @@ def balanceada(string):
     else:
         return False 
 
-print(balanceada('[(1234)]'))
