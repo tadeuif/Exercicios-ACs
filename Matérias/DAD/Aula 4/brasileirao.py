@@ -380,12 +380,13 @@ ela chumbada da função
 def rebaixados(dados):
     lista_rebaixados = []
     classifica = dados['fases']['2700']['classificacao']['grupo']['Único']
-    tam = len(classifica) -1
-    print(classifica)
-    for ids in range(tam,-1,-1):
-        if tam > 15:
+    classifica3 = dados['fases']['2700']['faixas-classificacao']['classifica3']['faixa']
+    classi = classifica3.split('-')
+    ind1 = int(classi[0]) - 2
+    tam = len(classifica) 
+    for ids in range(tam):
+        if ids > ind1:
             lista_rebaixados.append(classifica[ids])
-            tam -= 1
         else:
             pass
     return lista_rebaixados
