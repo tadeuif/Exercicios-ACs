@@ -1,8 +1,10 @@
 def verifica_ordenacao(lista):
     lenght = len(lista)
+    ind_2 = 1
     for i in range(lenght):
         if i+1 <= lenght:
-            if lista[i] > lista[i]:
+            if lista[i] < lista[ind_2]:
+                ind_2 += 1
                 return False
         else:    
             if lista[i-1] < lista[i]:
