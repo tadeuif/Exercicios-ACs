@@ -591,10 +591,10 @@ def runTests():
         suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestClientes)
         unittest.TextTestRunner(verbosity=2,failfast=True).run(suite)
 
-def pega_dados():
+'''def pega_dados():
     with open('ano2018.json') as f:
         dados = json.load(f)
-    return dados
+    return dados'''
 
 dados2018 = pega_dados()
 

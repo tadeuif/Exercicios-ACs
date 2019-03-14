@@ -2,13 +2,11 @@ def verifica_ordenacao(lista):
     lenght = len(lista)
     ind_2 = 1
     for i in range(lenght):
-        if i+1 <= lenght:
-            if lista[i] < lista[ind_2]:
+        if ind_2 < lenght:
+            if lista[i] > lista[ind_2]:
+                return False
+            else:    
                 ind_2 += 1
-                return False
-        else:    
-            if lista[i-1] < lista[i]:
-                return False
     else:
         return True
 
