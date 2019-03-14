@@ -367,6 +367,15 @@ def time_que_fez_mais_gols(dados):
 
     return max(gols_times,key=gols_times.get)
 
+def time_que_fez_mais_gols(dados): #RESOLUÇÃO PROF
+    time_melhor = '1'
+    dic_gols = dicionario_de_gols(dados)
+    for time in dic_gols:
+        if dic_gols[time] > dic_gols[time_melhor]:
+            time_melhor = time
+    return time_melhor
+
+
 '''
 Da mesma forma que podemos obter a informacao dos times classificados
 para a libertadores, também podemos obter os times na zona de rebaixamento
