@@ -26,24 +26,20 @@ print(busca(lista, 9))
 
 def busca_binaria(lista, elemento_desejado):
     tamanho = len(lista)
-    tamanho_total = len(lista)
+    elemento_inicial = 0
+    elemento_final = lista[-1]
     elemento_central = int(tamanho / 2)
     
-    
-    for p in lista:
+    for p in range(elemento_inicial, elemento_final):
         if lista[elemento_central] == elemento_desejado:
             return elemento_central
-
         else:
+            elemento_inicial = elemento_central + 1
             if elemento_desejado > lista[elemento_central]:
-                lista = lista[elemento_central + 1:tamanho_total] #Estou quebrando a lista, mas a lógica correta é manter a lista intacta
-                tamanho = len(lista)
-                elemento_central = int((tamanho / 2**p-1))
-                if lista[elemento_central] == elemento_desejado:
-                    return elemento_central
-    
-
-print(busca_binaria(lista, 6))
+                #lista = lista[elemento_central + 1:tamanho_total] #Estou quebrando a lista, mas a lógica correta é manter a lista intacta
+                elemento_central = int((elemento_inicial + elemento_final) / 2)
+                
+print(busca_binaria(lista, 7))
         
 
 
