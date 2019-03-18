@@ -1,3 +1,9 @@
+'''
+Tadeu Inocencio Freitas - RA 1800250
+Tibério Cruz - RA 1800110
+Vinícius Motta - RA 1800842
+
+'''
 def verifica_ordenacao(lista):
     lenght = len(lista)
     ind_2 = 1
@@ -38,7 +44,7 @@ def busca_binaria(lista, elemento_desejado):
         elif elemento_desejado < valor:#Se valor estiver a esquerda, está condição vai atender aos elementos da esquerda
             indice_final = meio#Afunila a pesquisa não danificando a lista inicial
 lista=[1,2,3,4,5,6,7,8]
-print('O elemento 2 na lista ',lista,'está na posição ',busca_binaria(lista,2))
+print(busca_binaria(lista,2))
 
 def busca_binaria_strings(lista, elemento_desejado):
     if verifica_ordenacao(lista) == True:
@@ -63,4 +69,4 @@ def busca_binaria_strings(lista, elemento_desejado):
 
 lista2=[1,4,3,4,5,6]
 lista2=['adde','bee','c','d']
-print('O elemento c na lista ',lista2,'está na posição ',busca_binaria_strings(lista2,'c'))
+print(busca_binaria_strings(lista2,'c'))
