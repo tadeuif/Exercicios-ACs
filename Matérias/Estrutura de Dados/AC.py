@@ -35,9 +35,9 @@ def busca_binaria(lista, elemento_desejado):
                 return None  
             indice_inicial = meio #Afunila a pesquisa não danificando a lista inicial
         
-        elif elemento_desejado < valor:#Se valor estiver a direita, está condição vai atender aos elementos da esquerda
+        elif elemento_desejado < valor:#Se valor estiver a esquerda, está condição vai atender aos elementos da esquerda
             indice_final = meio#Afunila a pesquisa não danificando a lista inicial
-lista=[1,2,3,4,5,6]
+lista=[1,2,3,4,5,6,7,8]
 print('O elemento 2 na lista ',lista,'está na posição ',busca_binaria(lista,2))
 
 def busca_binaria_strings(lista, elemento_desejado):
