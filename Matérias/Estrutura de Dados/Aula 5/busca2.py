@@ -19,7 +19,7 @@ def busca(lista, elemento_desejado):
             return i
     return None
 
-print(busca(lista, 9))
+print(busca(lista2, 122))
 """Busca linear que retorna o índice do elemento desejado se estiver na lista, caso contrário retorna None"""
     
 
