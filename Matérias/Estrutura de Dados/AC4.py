@@ -26,7 +26,6 @@ def busca_binaria(lista, elemento_desejado):
         else:
             elemento_inicial = elemento_central + 1
             if elemento_desejado > lista[elemento_central]:
-                #lista = lista[elemento_central + 1:tamanho_total] #Estou quebrando a lista, mas a lógica correta é manter a lista intacta
                 elemento_central = int((elemento_inicial + elemento_final) / 2)
 
 print(busca_binaria(lista2, 122))
