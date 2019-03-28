@@ -183,7 +183,7 @@ Ela deve "atender" na url /ola/<nome>
 '''
 @app.route('/ola/<nome>')
 def ola(nome):
-    return jsonify({"ola <nome>"})
+    return "ola <nome>"
 
 '''
 Exercicio
