@@ -29,10 +29,14 @@ def criar_fila(dados):
 def ultimos(fila, p):
     tam_fila_real = len(fila)
     tam_fila_solicitado = p
+    fila_original = [] #2 ideia sem perder a fila original
+    fila_original.extend(fila) #2 ideia sem perder a fila original
     while tam_fila_real > tam_fila_solicitado:
+        #fila_original.append(fila[0]) 1 ideia
         dequeue(fila)
         tam_fila_real = len(fila)
-    return fila
+    #fila.extend(fila_original) 1 ideia
+    return fila, fila_original
 
 def Main():
     lista_desorganizada = desorganizar_dados(dados_ord)
