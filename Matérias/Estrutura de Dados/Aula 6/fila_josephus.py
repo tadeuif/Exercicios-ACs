@@ -24,6 +24,6 @@ def josephus(jogadores, p):
             dequeue(fila)
             enqueue(fila, elemento_inicial)
             jogadas_realizadas += 1
-    return "Jogados vencedor: %i" %(fila[0]), "Jogadores eliminados por ordem: {}".format(ordem_eliminados)
+    return "Jogados vencedor: {}".format(fila[0]), "Jogadores eliminados por ordem: {}".format(ordem_eliminados)
 
 print(josephus(5,3))
