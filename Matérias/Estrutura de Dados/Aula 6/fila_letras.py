@@ -1,3 +1,9 @@
+'''
+Tadeu Inocencio Freitas - RA 1800250
+Tibério Cruz - RA 1800110
+
+'''
+
 def enqueue(fila, elemento):
     fila.append(elemento)
 
