@@ -1,3 +1,9 @@
+'''
+Tadeu Inocencio Freitas - RA 1800250
+Tibério Cruz - RA 1800110
+
+'''
+
 #!bin/python
 from flask import Flask,jsonify,abort
 from flask import request
