@@ -194,9 +194,19 @@ Crie uma função ola2 que recebe duas strings pessoa1 e pessoa2 e devolve
 Ela deve "atender" na url /ola_upgrade?pessoa1=fulano,pessoa2=ciclano
 Use as query strings, como no exemplo
 '''
-
+@app.route('/ola_upgrade')
 def ola2():
-    pass
+    dic_nomes = request.args
+    if 'pessoa1' not in dic_nomes:
+      pessoa1 = None
+    else:
+      pessoa1 = dic_nomes['pessoa1']
+    if 'pessoa2' not in dic_nomes:
+      pessoa2 = None
+    else:
+      pessoa2 = dic_nomes['pessoa2']
+
+    return "ola %s e %s" %(pessoa1, pessoa2)
 
 '''
 Exercicio
@@ -206,8 +216,19 @@ mas agora via POST.
 
 Ela deve receber a pessoa1 e a pessoa2 via json
 '''
+@app.route('/ola_upgrade', methods=['POST'])
 def ola3():
-    pass
+    dic_nomesjson = request.json
+    if 'pessoa1' not in dic_nomesjson:
+      pessoa1 = None
+    else:
+      pessoa1 = dic_nomesjson['pessoa1']
+    if 'pessoa2' not in dic_nomesjson:
+      pessoa2 = None
+    else:
+      pessoa2 = dic_nomesjson['pessoa2']
+
+    return "ola %s e %s" %(pessoa1, pessoa2)
 
 '''
 Exercicio
@@ -221,8 +242,21 @@ Ela tem duas diferenças com ola2:
     a resposta deve ser um dicionario {'erro':'falta gente'} e o
     codigo de status deve ser 400 
 '''
+@app.route('/ola_com_dic')
 def ola4():
-    pass
+    dic_nomes = request.args
+    if 'pessoa1' not in dic_nomes:
+      pessoa1 = None
+    else:
+      pessoa1 = dic_nomes['pessoa1']
+    if 'pessoa2' not in dic_nomes:
+      pessoa2 = None
+    else:
+      pessoa2 = dic_nomes['pessoa2']
+
+    if pessoa1 == None or pessoa2 == None :
+      return jsonify({'erro':'falta gente'}), 400
+    return jsonify({'pessoa1': pessoa1, 'pessoa2': pessoa2})
 '''
 Exercicio
 
@@ -235,8 +269,21 @@ Ela tem duas diferenças com ola3:
     a resposta deve ser um dicionario {'erro':'falta gente'} e o
     codigo de status deve ser 400 
 '''
+@app.route('/ola_com_dic', methods=['POST'])
 def ola5():
-    pass
+    dic_nomesjson = request.json
+    if 'pessoa1' not in dic_nomesjson:
+      pessoa1 = None
+    else:
+      pessoa1 = dic_nomesjson['pessoa1']
+    if 'pessoa2' not in dic_nomesjson:
+      pessoa2 = None
+    else:
+      pessoa2 = dic_nomesjson['pessoa2']
+
+    if pessoa1 == None or pessoa2 == None :
+      return jsonify({'erro':'falta gente'}), 400
+    return jsonify({'pessoa1': pessoa1, 'pessoa2': pessoa2})
 
 '''
 A partir daqui nao tem mais nada pra fazer
