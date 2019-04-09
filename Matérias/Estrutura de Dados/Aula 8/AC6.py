@@ -1,7 +1,7 @@
 #Busca Binária
 def busca_binaria(lista, elemento, esquerda=0,direita=0, meio=0):
     direita_len = len(lista) - 1
-    meio = (esquerda + direita) // 2
+    meio = (esquerda + direita_len) // 2
     if len(lista) == 0:
         return None
     if elemento == lista[meio]:
