@@ -1,16 +1,15 @@
 #Busca Binária
-def busca_binaria(lista, elemento):
-    esquerda = 0
-    direita = len(lista) - 1
+def busca_binaria(lista, elemento, esquerda=0,direita=0, meio=0):
+    direita_len = len(lista) - 1
     meio = (esquerda + direita) // 2
     if len(lista) == 0:
         return None
     if elemento == lista[meio]:
         return lista[meio]
     elif lista[meio] < elemento:
-        esquerda = meio + 1
-        meio = (esquerda + direita) // 2
-        return busca_binaria(lista, elemento)
+        nova_esquerda = meio + 1
+        novo_meio = (esquerda + direita_len) // 2
+        return busca_binaria(lista, elemento, esquerda=nova_esquerda, direita=direita_len, meio=novo_meio)
 #Quick Sort
 def quick_sort(lista):
     pass
