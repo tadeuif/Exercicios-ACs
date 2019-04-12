@@ -19,13 +19,17 @@ def alunos():
 def professores():
     return jsonify(database['PROFESSOR'])
 
-#na url /alunos
-#com verbo post
 @app.route('/alunos', methods=['POST'])
 def cria_aluno():
-    #vou receber um dicionario via json
     dici = request.json
-    #e colocar na lista
+    lenght_alunos = len(database['ALUNO'])
+    for aluno in range(lenght_alunos):
+        if dici['id'] == database['ALUNO'][aluno]['id']:
+            dic_erro = {'erro': 'id ja utilizada'}
+            return jsonify(dic_erro), 400
+    if 'nome' not in dici:  #TESTE008 DANDO PAL!
+        dic_erro = {'erro': 'aluno sem nome'}
+        return jsonify(dic_erro), 400
     database['ALUNO'].append(dici)
     return jsonify(database['ALUNO'])
 
@@ -34,7 +38,8 @@ def localiza_aluno(id_aluno):
         for aluno in database['ALUNO']:
             if aluno['id'] == id_aluno:
                 return jsonify(aluno)
-        return 'não achei', 404
+        dic_erro = {'erro': 'aluno nao encontrado'}
+        return jsonify(dic_erro), 400
                 
 @app.route('/reseta', methods=['POST'])
 def reseta_lista():
@@ -49,7 +54,23 @@ def delete_aluno(id_aluno):
         if database['ALUNO'][aluno]['id'] == id_aluno:
             del database['ALUNO'][aluno]
             return 'ID aluno deletado: {}'.format(id_aluno)
-    return 'Não encontrado', 404
+    dic_erro = {'erro': 'aluno nao encontrado'}
+    return jsonify(dic_erro), 400
 
+@app.route('/alunos/<int:id_aluno>', methods=['PUT'])
+def edita_aluno(id_aluno):
+    dici = request.json
+    lenght_alunos = len(database['ALUNO'])
+    for aluno in range(lenght_alunos):
+        if database['ALUNO'][aluno]['id'] == id_aluno:
+            novo_nome = request.json['nome']
+            database['ALUNO'][aluno]['nome'] = novo_nome
+            return 'ID aluno alterado: {}'.format(id_aluno)
+        if 'nome' not in dici:  #TESTE008 DANDO PAL!
+            dic_erro = {'erro': 'aluno sem nome'}
+            return jsonify(dic_erro), 400
+    dic_erro = {'erro': 'aluno nao encontrado'}
+    return jsonify(dic_erro), 400
+    
 if __name__ == '__main__':
-            app.run(host='localhost', port=5002, debug=True) 
+    app.run(host='localhost', port=5002, debug=True) 

@@ -1,0 +1,30 @@
+@app.route('/alunos', methods=['POST'])
+def cria_aluno():
+    dici = request.json
+    lenght_alunos = len(database['ALUNO'])
+    for aluno in range(lenght_alunos):
+        if dici['id'] == database[aluno]['id']:
+            dic_erro = {'erro': 'id ja utilizada'}
+            return jsonify(dic_erro), 400
+        else:
+            database['ALUNO'].append(dici)
+    return jsonify(database['ALUNO'])
+
+    @app.route('/alunos', methods=['POST'])
+def cria_aluno():
+    dici = request.json
+    novo_id = dici['id']
+    lenght_alunos = len(database['ALUNO'])
+    for alunos in range(lenght_alunos):
+        if novo_id != database['ALUNO'][alunos]['id']:
+            database['ALUNO'].append(dici)
+        else:
+            dic_erro = {'erro': 'id ja utilizada'}
+            return jsonify(dic_erro), 400
+    return jsonify(database['ALUNO'])
+
+    @app.route('/alunos', methods=['POST'])
+    def cria_aluno():
+        dici = request.json
+        database['ALUNO'].append(dici)
+        return jsonify(database['ALUNO'])
