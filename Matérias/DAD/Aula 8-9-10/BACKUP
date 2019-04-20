@@ -28,3 +28,24 @@ def cria_aluno():
         dici = request.json
         database['ALUNO'].append(dici)
         return jsonify(database['ALUNO'])
+
+for campos in range(tamanho_lista_campos):
+        if lista_campos[campos] == "id_professor":
+            if 'id_professor' in dici:
+                tamanho_prof = len(database['PROFESSOR'])
+                for prof in range(tamanho_prof):
+                    profs = database['PROFESSOR']
+                    id_prof_a_procurar = profs[prof]['id']
+                    if profs == []:
+                        dic_erro_prof = {'erro': 'Professor não cadastrado'}
+                        return jsonify(dic_erro_prof), 400
+                    ''' if id_prof_a_procurar in dici: #dici['id_professor'] == database['PROFESSOR'][prof]['id_professor']
+                            pass
+                        elif id_prof_a_procurar not in dici:
+                            dic_erro_prof = {'erro': 'Professor não cadastrado'}
+                            return jsonify(dic_erro_prof), 400'''
+            if 'id_professor' not in dici:
+                pass #Prof não adicionado
+        elif lista_campos[campos] not in dici:
+            dic_erro = {'erro': '{} faltando'.format(lista_campos[campos])}
+            return jsonify(dic_erro), 400

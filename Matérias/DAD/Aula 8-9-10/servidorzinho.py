@@ -202,19 +202,27 @@ def adiciona_ofertadas():
     tamanho=len(database['OFERTADAS'])
     lista_campos = ["ano","id","turma","semestre","data","id_professor"]
     tamanho_lista_campos = len(lista_campos)
+
     for campos in range(tamanho_lista_campos):
         if lista_campos[campos] == "id_professor":
-            if 'id_professor' in dici:
-                professor_id = dici['id_professor']
-                tamanho_prof = len(database['PROFESSOR'])
-                for prof in range(tamanho_prof):
-                    profs = professores()
-                    id_prof_a_procurar = profs[prof]['id']
-                    if professor_id not in id_prof_a_procurar:
-                        dic_erro_prof = {'erro': 'Professor não cadastrado'}
-                        return jsonify(dic_erro_prof), 400
             if 'id_professor' not in dici:
-                pass #Prof não adicionado
+                pass
+            else:
+                profs = database['PROFESSOR']
+                profs_vazio = []
+                if profs == profs_vazio:
+                    dic_erro_prof = {'erro': 'Professor não cadastrado'}
+                    return jsonify(dic_erro_prof), 400
+                
+                tamanho_prof = len(database['PROFESSOR'])
+                for professor in range(tamanho_prof):
+                    if 'id_professor' in dici:
+                        if dici['id_professor'] == database['PROFESSOR'][professor]['id']:
+                            pass
+                        elif dici['id_professor'] != database['PROFESSOR'][professor]['id']:
+                            dic_erro_prof = {'erro': 'Professor não cadastrado'}
+                            return jsonify(dic_erro_prof), 400
+            
         elif lista_campos[campos] not in dici:
             dic_erro = {'erro': '{} faltando'.format(lista_campos[campos])}
             return jsonify(dic_erro), 400
@@ -223,9 +231,7 @@ def adiciona_ofertadas():
         if dici['id'] == database['OFERTADAS'][id_busca]['id']:
             dic_erro = {'erro': 'id ja utilizada'}
             return jsonify(dic_erro), 400
-    '''if 'nome' not in dici:
-        dic_erro = {'erro': 'Disciplina sem nome'}
-        return jsonify(dic_erro), 400'''
+    
     database['OFERTADAS'].append(dici)
     return jsonify(database['OFERTADAS'])
 
