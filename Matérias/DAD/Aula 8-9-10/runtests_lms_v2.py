@@ -3,7 +3,7 @@ import unittest
 
 class TestStringMethods(unittest.TestCase):
 
-    '''
+    
     def test_000_alunos_retorna_lista(self):
         r = requests.get('http://localhost:5002/alunos')
         self.assertEqual(type(r.json()),type([]))
@@ -319,7 +319,7 @@ class TestStringMethods(unittest.TestCase):
         r = requests.post('http://localhost:5002/disciplinas',json={'id':103,'nome':'estruturas de dados','status':12,'plano_ensino':'dados'})
         self.assertEqual(r.status_code,400)
         self.assertTrue('erro' in r.json())
-    '''
+    
     def test_300_ofertadas_retorna_lista(self):
         r_reset = requests.post('http://localhost:5002/reseta')
         r = requests.get('http://localhost:5002/ofertadas')
