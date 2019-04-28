@@ -1,0 +1,12 @@
+def arvore_do_brasil(cidades):
+    brasil = {}
+    Brasil = {}
+    for cidade, estado in zip(cidades, estados):
+        if estado in brasil:
+            es = brasil[estado].update({cidade: None})
+            Brasil[estado] = es
+        elif estado not in brasil:
+            es = brasil.update({estado: {cidade: None}}) 
+            Brasil.update({estado: es})
+    #d = {Brasil: brasil}    
+    return Brasil
