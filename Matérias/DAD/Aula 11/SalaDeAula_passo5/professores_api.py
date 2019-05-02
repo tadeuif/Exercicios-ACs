@@ -7,8 +7,9 @@ from services.professores_service import \
     localizar as service_localizar, \
     criar as service_criar, \
     remover as service_remover, \
-    atualizar as service_atualizar
-
+    atualizar as service_atualizar, \
+    resetar as service_resetar
+from services.alunos_service import resetar as reseta_alunos
 
 
 
@@ -57,3 +58,9 @@ def atualizar(id):
     if atualizado != None:
         return jsonify(to_dict(atualizado))
     return jsonify({'erro':'professor nao encontrado'}), 404
+
+@professores_app.route('/reseta', methods=['POST'])
+def resetar():
+    limpa_lista1 = service_resetar()
+    limpa_lista2 = reseta_alunos()
+    return jsonify('aaa')
