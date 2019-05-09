@@ -17,6 +17,14 @@ CREATE TABLE IF NOT EXISTS Alunos (
     nome TEXT NOT NULL
 )
 """
+
+@transact(make_connection)
+def criar_db():
+    print('criando tabela alunos')
+    cursor.execute(create_table)
+    connection.commit()
+criar_db()
+
 sql_resetar = 'delete from Alunos'
 @transact(make_connection)
 def resetar():
@@ -30,7 +38,7 @@ def listar():
     cursor.execute(sql_all)
     a = cursor.fetchone()
     while a != None:
-        resposta.append(Alunos(a[0],a[1])
+        resposta.append(Alunos(a[0],a[1]))
         a = cursor.fetchone()
     return resposta
 
@@ -46,10 +54,7 @@ def localizar(id):
     d = Alunos(a[0],a[1])
     return d
 
-sql_create='''INSERT INTO Alunos
-    (id,
-    nome) VALUES (?,?)
-'''
+sql_create='''INSERT INTO Alunos(id,nome) VALUES (?,?)'''
 @transact(make_connection)
 def criar(id, nome):
     if localizar(id) != None:
