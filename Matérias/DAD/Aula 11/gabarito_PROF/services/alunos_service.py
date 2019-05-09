@@ -38,7 +38,7 @@ def listar():
     cursor.execute(sql_all)
     a = cursor.fetchone()
     while a != None:
-        resposta.append(Alunos(a[0],a[1]))
+        resposta.append(Aluno(a[0],a[1]))
         a = cursor.fetchone()
     return resposta
 
@@ -51,7 +51,7 @@ def localizar(id):
     a = cursor.fetchone()
     if a  == None:
         return None
-    d = Alunos(a[0],a[1])
+    d = Aluno(a[0],a[1])
     return d
 
 sql_create='''INSERT INTO Alunos(id,nome) VALUES (?,?)'''
@@ -61,7 +61,7 @@ def criar(id, nome):
         raise AlunoJaExiste
 
     log = Log(None)
-    criado = Alunos(id, nome)
+    criado = Aluno(id, nome)
     cursor.execute(sql_create,(id, nome))
     connection.commit()
     log.finalizar(criado)
@@ -97,7 +97,7 @@ def atualizar(id_antigo, id_novo, nome):
         return None
     log = Log(existente)
     existente.atualizar(id_novo, nome)
-    cursor.execute(sql_atualizar,(id_novo, nome))
+    cursor.execute(sql_atualizar,(id_novo, nome, id_antigo))
     connection.commit()
     log.finalizar(existente)
     return existente
