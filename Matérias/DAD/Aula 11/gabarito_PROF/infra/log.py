@@ -1,3 +1,5 @@
+import sys
+sys.path.append('C:/Users/Tadeu/Desktop/Exercicios-ACs/Matérias/DAD/Aula 11/gabarito_PROF')
 from datetime import datetime
 from infra.to_dict import to_dict
 

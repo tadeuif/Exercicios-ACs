@@ -1,3 +1,7 @@
+import sys
+sys.path.append('C:/Users/Tadeu/Desktop/Exercicios-ACs/Matérias/DAD/Aula 11/gabarito_PROF')
+print(sys.path)
+
 from model.ofertada import Ofertada
 from infra.log import Log
 from services.professores_service import localizar as localizar_professor

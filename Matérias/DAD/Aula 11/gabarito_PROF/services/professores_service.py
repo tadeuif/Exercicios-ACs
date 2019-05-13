@@ -1,3 +1,5 @@
+import sys
+sys.path.append('C:/Users/Tadeu/Desktop/Exercicios-ACs/Matérias/DAD/Aula 11/gabarito_PROF')
 from model.professor import Professor
 from infra.log import Log
 from wrap_connection import transact
