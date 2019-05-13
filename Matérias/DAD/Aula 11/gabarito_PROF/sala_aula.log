@@ -573,3 +573,238 @@ Mudanças iniciaram em 2019-05-09 12:22:16.128188.
 Valor original: None.
 Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
 Mudanças finalizaram em 2019-05-09 12:22:16.187200.
+
+Mudanças iniciaram em 2019-05-12 14:39:37.803664.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:39:37.803664.
+
+Mudanças iniciaram em 2019-05-12 14:39:39.857296.
+Valor original: None.
+Valor final: {'id': 20, 'nome': 'mario'}.
+Mudanças finalizaram em 2019-05-12 14:39:39.857296.
+
+Mudanças iniciaram em 2019-05-12 14:39:41.910872.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:39:41.910872.
+
+Mudanças iniciaram em 2019-05-12 14:39:47.084016.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:39:47.084016.
+
+Mudanças iniciaram em 2019-05-12 14:39:48.120254.
+Valor original: None.
+Valor final: {'id': 28, 'nome': 'lucas'}.
+Mudanças finalizaram em 2019-05-12 14:39:48.120254.
+
+Mudanças iniciaram em 2019-05-12 14:39:50.188181.
+Valor original: {'id': 28, 'nome': 'lucas'}.
+Valor final: None.
+Mudanças finalizaram em 2019-05-12 14:39:50.188181.
+
+Mudanças iniciaram em 2019-05-12 14:39:53.308366.
+Valor original: None.
+Valor final: {'id': 28, 'nome': 'lucas'}.
+Mudanças finalizaram em 2019-05-12 14:39:53.308366.
+
+Mudanças iniciaram em 2019-05-12 14:39:55.385290.
+Valor original: {'id': 28, 'nome': 'lucas'}.
+Valor final: {'id': 28, 'nome': 'lucas mendes'}.
+Mudanças finalizaram em 2019-05-12 14:39:55.385290.
+
+Mudanças iniciaram em 2019-05-12 14:40:02.590786.
+Valor original: None.
+Valor final: {'id': 7, 'nome': 'bond'}.
+Mudanças finalizaram em 2019-05-12 14:40:02.590786.
+
+Mudanças iniciaram em 2019-05-12 14:40:06.713113.
+Valor original: None.
+Valor final: {'id': 7, 'nome': 'maximus'}.
+Mudanças finalizaram em 2019-05-12 14:40:06.713113.
+
+Mudanças iniciaram em 2019-05-12 14:40:10.836102.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'fernando'}.
+Mudanças finalizaram em 2019-05-12 14:40:10.836102.
+
+Mudanças iniciaram em 2019-05-12 14:40:11.869400.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:40:11.869400.
+
+Mudanças iniciaram em 2019-05-12 14:40:14.950740.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'fernando'}.
+Mudanças finalizaram em 2019-05-12 14:40:14.955956.
+
+Mudanças iniciaram em 2019-05-12 14:40:15.968898.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:40:15.973886.
+
+Mudanças iniciaram em 2019-05-12 14:40:18.017155.
+Valor original: None.
+Valor final: {'id': 20, 'nome': 'mario'}.
+Mudanças finalizaram em 2019-05-12 14:40:18.017155.
+
+Mudanças iniciaram em 2019-05-12 14:40:20.069527.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:40:20.069527.
+
+Mudanças iniciaram em 2019-05-12 14:40:25.242655.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:40:25.242655.
+
+Mudanças iniciaram em 2019-05-12 14:40:26.261155.
+Valor original: None.
+Valor final: {'id': 28, 'nome': 'lucas'}.
+Mudanças finalizaram em 2019-05-12 14:40:26.261155.
+
+Mudanças iniciaram em 2019-05-12 14:40:28.299369.
+Valor original: {'id': 28, 'nome': 'lucas'}.
+Valor final: None.
+Mudanças finalizaram em 2019-05-12 14:40:28.299369.
+
+Mudanças iniciaram em 2019-05-12 14:40:31.449019.
+Valor original: None.
+Valor final: {'id': 28, 'nome': 'lucas'}.
+Mudanças finalizaram em 2019-05-12 14:40:31.449019.
+
+Mudanças iniciaram em 2019-05-12 14:40:33.478248.
+Valor original: {'id': 28, 'nome': 'lucas'}.
+Valor final: {'id': 28, 'nome': 'lucas mendes'}.
+Mudanças finalizaram em 2019-05-12 14:40:33.483207.
+
+Mudanças iniciaram em 2019-05-12 14:40:40.736137.
+Valor original: None.
+Valor final: {'id': 7, 'nome': 'bond'}.
+Mudanças finalizaram em 2019-05-12 14:40:40.736137.
+
+Mudanças iniciaram em 2019-05-12 14:40:44.854898.
+Valor original: None.
+Valor final: {'id': 7, 'nome': 'maximus'}.
+Mudanças finalizaram em 2019-05-12 14:40:44.854898.
+
+Mudanças iniciaram em 2019-05-12 14:40:47.958215.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'fernando'}.
+Mudanças finalizaram em 2019-05-12 14:40:47.964198.
+
+Mudanças iniciaram em 2019-05-12 14:40:48.977629.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:40:48.978786.
+
+Mudanças iniciaram em 2019-05-12 14:40:55.156405.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'fernando'}.
+Mudanças finalizaram em 2019-05-12 14:40:55.156405.
+
+Mudanças iniciaram em 2019-05-12 14:40:56.188678.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:40:56.188678.
+
+Mudanças iniciaram em 2019-05-12 14:40:58.227029.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:40:58.227029.
+
+Mudanças iniciaram em 2019-05-12 14:40:59.246818.
+Valor original: None.
+Valor final: {'carga_horaria': 10, 'id': 101, 'id_coordenador': {}, 'nome': 'distribuidos', 'plano_ensino': 'clientes e servidores', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:40:59.251800.
+
+Mudanças iniciaram em 2019-05-12 14:41:01.299145.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 103, 'id_coordenador': {}, 'nome': 'matematica', 'plano_ensino': 'funcoes e calculo', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:01.299145.
+
+Mudanças iniciaram em 2019-05-12 14:41:03.356109.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 104, 'id_coordenador': {}, 'nome': 'lp2', 'plano_ensino': 'dicionarios e classes', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:03.356109.
+
+Mudanças iniciaram em 2019-05-12 14:41:08.516329.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:08.516329.
+
+Mudanças iniciaram em 2019-05-12 14:41:09.546406.
+Valor original: None.
+Valor final: {'carga_horaria': 10, 'id': 101, 'id_coordenador': {}, 'nome': 'distribuidos', 'plano_ensino': 'clientes e servidores', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:09.546406.
+
+Mudanças iniciaram em 2019-05-12 14:41:11.584326.
+Valor original: {'carga_horaria': 15, 'id': 100, 'id_coordenador': None, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Valor final: None.
+Mudanças finalizaram em 2019-05-12 14:41:11.584326.
+
+Mudanças iniciaram em 2019-05-12 14:41:14.672356.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:14.673466.
+
+Mudanças iniciaram em 2019-05-12 14:41:16.726860.
+Valor original: {'carga_horaria': 15, 'id': 100, 'id_coordenador': None, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': None, 'nome': 'algoritmos', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:16.726860.
+
+Mudanças iniciaram em 2019-05-12 14:41:23.947719.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:23.956833.
+
+Mudanças iniciaram em 2019-05-12 14:41:27.041483.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:27.041483.
+
+Mudanças iniciaram em 2019-05-12 14:41:36.056603.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'fernando'}.
+Mudanças finalizaram em 2019-05-12 14:41:36.065182.
+
+Mudanças iniciaram em 2019-05-12 14:41:37.090098.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:41:37.090098.
+
+Mudanças iniciaram em 2019-05-12 14:41:38.125168.
+Valor original: None.
+Valor final: {'carga_horaria': 15, 'id': 100, 'id_coordenador': {}, 'nome': 'estruturas de dados', 'plano_ensino': 'dados', 'status': 12}.
+Mudanças finalizaram em 2019-05-12 14:41:38.125168.
+
+Mudanças iniciaram em 2019-05-12 14:54:19.565487.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'roberto'}.
+Mudanças finalizaram em 2019-05-12 14:54:19.565487.
+
+Mudanças iniciaram em 2019-05-12 14:54:21.620137.
+Valor original: None.
+Valor final: {'id': 20, 'nome': 'mario'}.
+Mudanças finalizaram em 2019-05-12 14:54:21.620137.
+
+Mudanças iniciaram em 2019-05-12 14:54:23.653151.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:54:23.659114.
+
+Mudanças iniciaram em 2019-05-12 14:54:28.791819.
+Valor original: None.
+Valor final: {'id': 29, 'nome': 'cicero'}.
+Mudanças finalizaram em 2019-05-12 14:54:28.791819.
+
+Mudanças iniciaram em 2019-05-12 14:54:29.820961.
+Valor original: None.
+Valor final: {'id': 28, 'nome': 'lucas'}.
+Mudanças finalizaram em 2019-05-12 14:54:29.820961.
+
+Mudanças iniciaram em 2019-05-12 14:54:31.875534.
+Valor original: {'id': 28, 'nome': 'lucas'}.
+Valor final: None.
+Mudanças finalizaram em 2019-05-12 14:54:31.875534.

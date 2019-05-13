@@ -3,7 +3,7 @@ import unittest
 import sqlite3
 
 class TestStringMethods(unittest.TestCase):
-
+    '''
     def test_000_alunos_retorna_lista(self):
         r = requests.get('http://localhost:5002/alunos')
         self.assertEqual(type(r.json()),type([]))
@@ -337,7 +337,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(r.status_code,200)
         r_lista = requests.get('http://localhost:5002/ofertadas')
         self.assertEqual(len(r_lista.json()),0)
-
+    '''
     def test_301_adiciona_ofertadas(self):
         r = requests.post('http://localhost:5002/ofertadas',json={'id':100,'ano':2019,'semestre':1,'turma':'SI3','data':'2019-04-13'})
         r = requests.post('http://localhost:5002/ofertadas',json={'id':101,'ano':2019,'semestre':1,'turma':'ADS3','data':'2019-04-13'})

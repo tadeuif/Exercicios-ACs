@@ -41,3 +41,19 @@ class Ofertada():
     @property
     def data(self):
         return self.__data
+
+    @property
+    def coordenador(self):
+        return self.__id_coordenador
+
+    @property
+    def disciplina(self):
+        return self.__id_disciplina
+    
+    @property
+    def curso(self):
+        return self.__id_curso
+
+    @property
+    def professor(self):
+        return self.__id_professor

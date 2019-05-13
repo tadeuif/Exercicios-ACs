@@ -78,7 +78,7 @@ sql_create='''INSERT INTO Ofertadas
     id_professor) VALUES (?,?,?,?,?,?,?,?,?)
 '''
 @transact(make_connection)
-def criar(id, ano, semestre, turma, data, valor_coordenador, valor_disciplina, valor_curso, valor_professor):
+def criar(id, ano, semestre, turma, data, valor_coordenador="", valor_disciplina="", valor_curso="", valor_professor=""):
     if localizar(id) != None:
         raise OfertadaJaExiste
 
@@ -108,7 +108,7 @@ def remover(id):
     return existente
 
 sql_atualizar = '''
-UPDATE Disciplinas SET
+UPDATE Ofertadas SET
     id = ?,
     nome = ?,
     status = ?,
@@ -142,26 +142,25 @@ def atualizar(id_antigo, id_novo, ano, semestre, turma, data, valor_coordenador,
     return existente
 
 def preparar_campos_opcionais(campos_opcionais):
-    id_coordenador, id_disciplina, id_curso, id_professor = None, None, None, None
 
     if 'id_coordenador' in campos_opcionais:
         id_coordenador = campos_opcionais['id_coordenador']
     else:
-        id_coordenador = None
+        id_coordenador = ""
 
     if 'id_disciplina' in campos_opcionais:
         id_disciplina = campos_opcionais['id_disciplina']
     else:
-        id_disciplina = None
+        id_disciplina = ""
 
     if 'id_curso' in campos_opcionais:
         id_curso = campos_opcionais['id_curso']
     else:
-        id_curso = None
+        id_curso = ""
     
     if 'id_professor' in campos_opcionais:
         id_professor = campos_opcionais['id_professor']
     else:
-        id_professor = None
+        id_professor = ""
 
     return id_coordenador, id_disciplina, id_curso, id_professor
