@@ -1,0 +1,11 @@
+A = float(input())
+B = float(input())
+C = float(input())
+PESO_A = 2
+PESO_B = 3
+PESO_C = 5
+A_POND = PESO_A * A
+B_POND = PESO_B * B
+C_POND = PESO_C * C
+MEDIA = (A_POND + B_POND + C_POND) / (PESO_A + PESO_B + PESO_C)
+print("MEDIA = %.1f" % MEDIA)
